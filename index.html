@@ -2,8 +2,18 @@
 <html lang="en"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privil Edge Solutions — Premium Vehicle Financing</title>
-<meta name="description" content="India's leading digital vehicle financing platform. Loan against car, new car loans, and used car loans with instant approvals and competitive rates.">
+<title>Privil Edge Solutions — Vehicle Financing in Kochi | Loan Against Car</title>
+<meta name="description" content="Privil Edge Solutions in Kochi offers loan against car, new car loans and used car loans. Check your EMI, see your eligibility and request a callback.">
+<link rel="canonical" href="https://priviledge.in/">
+<meta name="theme-color" content="#05070B">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Privil Edge Solutions">
+<meta property="og:title" content="Privil Edge Solutions — Vehicle Financing in Kochi">
+<meta property="og:description" content="Privil Edge Solutions in Kochi offers loan against car, new car loans and used car loans. Check your EMI, see your eligibility and request a callback.">
+<meta property="og:url" content="https://priviledge.in/">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FinancialService", "name": "Privil Edge Solutions", "url": "https://priviledge.in/", "telephone": "+91-97785-16374", "email": "pninangeorge@yahoo.com", "description": "Vehicle financing: loan against car, new car loans and used car loans.", "address": {"@type": "PostalAddress", "streetAddress": "4th Floor, Pukalakkattu City Centre, Palarivattom", "addressLocality": "Kochi", "addressRegion": "Kerala", "postalCode": "682025", "addressCountry": "IN"}, "areaServed": "IN"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What documents do I usually need?", "acceptedAnswer": {"@type": "Answer", "text": "Typically a photo ID, address proof, recent income proof or bank statements and, for a loan against car, the vehicle's registration certificate and insurance. Exact requirements depend on the lender and your profile, and our team confirms the list when they call you back."}}, {"@type": "Question", "name": "What is the starting interest rate?", "acceptedAnswer": {"@type": "Answer", "text": "Rates start from 7.5% p.a. The rate you receive depends on your profile, the vehicle and the lender. Use the EMI calculator above to see how different rates change your monthly payment."}}, {"@type": "Question", "name": "What is a loan against car?", "acceptedAnswer": {"@type": "Answer", "text": "It lets you raise funds against a car you already own while you continue to use it. The amount depends on the vehicle's value and condition and on your repayment capacity."}}, {"@type": "Question", "name": "How long does approval take?", "acceptedAnswer": {"@type": "Answer", "text": "Timelines depend on the lender and how quickly your documents are verified. Our team will give you a realistic estimate when they call you back."}}, {"@type": "Question", "name": "Does the eligibility check affect my credit score?", "acceptedAnswer": {"@type": "Answer", "text": "No. The eligibility check on this page is only an indicative estimate calculated in your browser. It does not involve a credit bureau check."}}, {"@type": "Question", "name": "Are there processing fees or other charges?", "acceptedAnswer": {"@type": "Answer", "text": "Processing and other charges vary by lender and loan type. Our team explains the applicable charges before you proceed, so you can compare with confidence."}}, {"@type": "Question", "name": "Can I repay the loan early?", "acceptedAnswer": {"@type": "Answer", "text": "Many lenders allow part-payment or foreclosure, sometimes with charges. The terms depend on the lender, and we will share them before you decide."}}, {"@type": "Question", "name": "How do I get started?", "acceptedAnswer": {"@type": "Answer", "text": "Use the calculator, run the eligibility check, then request a callback. You can also message us on WhatsApp or call +91 97785 16374."}}]}</script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%278%27 fill=%27%23F5C042%27/%3E%3Ctext x=%2716%27 y=%2723%27 font-size=%2720%27 font-weight=%27800%27 text-anchor=%27middle%27 fill=%27%2305070B%27 font-family=%27sans-serif%27%3EP%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -839,6 +849,58 @@
     .marquee-track, .badge-dot { animation: none; }
     .reveal { opacity: 1; transform: none; transition: none; }
   }
+
+  /* ===== Added features ===== */
+  .fab-stack { position: fixed; right: 18px; bottom: calc(18px + env(safe-area-inset-bottom, 0px)); display: flex; flex-direction: column; gap: 12px; z-index: 90; }
+  .fab { width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 28px; color: #fff; text-decoration: none; box-shadow: 0 10px 30px rgba(0,0,0,0.45); transition: var(--transition); }
+  .fab:hover { transform: translateY(-3px) scale(1.05); }
+  .fab-wa { background: #25D366; }
+  .fab-call { background: var(--gold-grad); color: #05070B; font-size: 22px; display: none; }
+  @media (max-width: 768px) { .fab-call { display: flex; } .fab { width: 52px; height: 52px; } }
+
+  .elig-card { max-width: 760px; margin: 0 auto; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-xl); padding: 44px; backdrop-filter: blur(20px); }
+  @media (max-width: 600px) { .elig-card { padding: 28px 20px; } }
+  .elig-progress { display: flex; gap: 8px; margin-bottom: 28px; }
+  .elig-progress span { flex: 1; height: 4px; border-radius: 4px; background: #192131; transition: var(--transition); }
+  .elig-progress span.on { background: var(--gold); }
+  .elig-q { font-size: 22px; font-weight: 700; margin-bottom: 20px; }
+  .chip-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  @media (max-width: 600px) { .chip-grid { grid-template-columns: 1fr; } }
+  .chip { font: inherit; color: var(--text-primary); background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 16px 18px; text-align: left; cursor: pointer; font-weight: 600; transition: var(--transition); }
+  .chip:hover, .chip:focus-visible { border-color: var(--border-glow); background: var(--gold-subtle); outline: none; }
+  .elig-back { background: none; border: 0; color: var(--text-secondary); font: inherit; font-size: 14px; cursor: pointer; margin-top: 20px; padding: 0; }
+  .elig-back:hover { color: var(--gold); }
+  .elig-result h3 { font-size: 26px; margin-bottom: 12px; }
+  .elig-result p { color: var(--text-secondary); margin-bottom: 8px; }
+  .elig-tag { display: inline-block; font-size: 12px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px; margin-bottom: 16px; border: 1px solid; }
+  .elig-tag.good { color: #34D399; border-color: rgba(52,211,153,0.4); background: rgba(16,185,129,0.08); }
+  .elig-tag.mid { color: var(--gold); border-color: var(--border-glow); background: var(--gold-subtle); }
+  .elig-tag.low { color: #F87171; border-color: rgba(248,113,113,0.4); background: rgba(248,113,113,0.08); }
+  .elig-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; }
+  .elig-btn { display: inline-flex; align-items: center; gap: 10px; font: inherit; font-weight: 700; padding: 14px 26px; border-radius: 999px; border: 1px solid var(--border); color: var(--text-primary); background: transparent; cursor: pointer; text-decoration: none; transition: var(--transition); }
+  .elig-btn.primary { background: var(--gold-grad); color: #05070B; border-color: transparent; }
+  .elig-btn:hover { transform: translateY(-2px); }
+  .elig-note { font-size: 12px !important; color: var(--text-muted) !important; margin-top: 18px; }
+
+  .faq-list { max-width: 820px; margin: 0 auto; display: grid; gap: 14px; }
+  .faq-list details { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 0 24px; transition: var(--transition); }
+  .faq-list details[open] { border-color: var(--border-glow); }
+  .faq-list summary { cursor: pointer; list-style: none; padding: 20px 0; font-weight: 700; font-size: 17px; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+  .faq-list summary::-webkit-details-marker { display: none; }
+  .faq-list summary::after { content: '+'; color: var(--gold); font-size: 24px; line-height: 1; transition: var(--transition); }
+  .faq-list details[open] summary::after { transform: rotate(45deg); }
+  .faq-list details p { color: var(--text-secondary); padding-bottom: 22px; margin: 0; }
+
+  .est-chip { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; background: var(--gold-subtle); border: 1px solid var(--border-glow); border-radius: var(--radius-md); padding: 14px 18px; margin-bottom: 24px; font-size: 14px; }
+  .est-chip b { color: var(--gold); font-weight: 700; }
+  .est-chip a { color: var(--gold); font-size: 13px; text-decoration: underline; white-space: nowrap; }
+  .est-sub { display: block; color: var(--text-secondary); font-size: 12.5px; margin-top: 3px; }
+  .est-chip.flash { animation: estflash 1.4s ease; }
+  @keyframes estflash { 0%, 100% { box-shadow: 0 0 0 0 transparent; } 40% { box-shadow: 0 0 0 6px var(--gold-glow); } }
+  @media (prefers-reduced-motion: reduce) { .est-chip.flash { animation: none; } }
+  .consent-row { display: flex; gap: 12px; align-items: flex-start; margin-bottom: 22px; font-size: 13px; color: var(--text-secondary); line-height: 1.5; cursor: pointer; }
+  .lead-form-box .consent-row input { appearance: auto; -webkit-appearance: checkbox; width: 18px; height: 18px; margin-top: 2px; flex: none; padding: 0; border: 0; background: transparent; accent-color: #F5C042; }
+  .consent-row a { color: var(--gold); }
 </style>
 </head>
 <body>
@@ -857,6 +919,7 @@
       <a href="#services">Solutions</a>
       <a href="#calculator">Calculator</a>
       <a href="#partners">Partners</a>
+      <a href="#faq">FAQ</a>
       <a href="#contact">Contact</a>
     </nav>
     <div class="nav-actions">
@@ -1080,7 +1143,7 @@
           </div>
         </div>
 
-        <a href="#contact" class="btn-submit-glow" style="text-decoration:none;">
+        <a href="#contact" id="applyCalcBtn" class="btn-submit-glow" style="text-decoration:none;">
           Apply With This Calculation <i class="fa-solid fa-arrow-right"></i>
         </a>
       </div>
@@ -1088,7 +1151,18 @@
   </div>
 </section>
 
-<!-- Banking Partners -->
+<!-- Eligibility Check -->
+<section id="eligibility" style="padding:0 0 70px;">
+  <div class="wrap">
+    <div class="section-head reveal" style="margin-bottom:48px;">
+      <span class="sub-badge">Eligibility Check</span>
+      <h2>See where you stand in 3 taps.</h2>
+      <p>We compare the EMI from your calculator with your income and show an indicative result.</p>
+    </div>
+    <div class="elig-card reveal" id="eligCard" aria-live="polite"></div>
+  </div>
+</section>
+
 <section id="partners" style="padding-bottom: 70px;">
   <div class="wrap">
     <div class="section-head reveal">
@@ -1124,7 +1198,27 @@
   </div>
 </section>
 
-<!-- Contact Section -->
+<!-- FAQ -->
+<section id="faq" style="padding-top:40px;">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="sub-badge">FAQ</span>
+      <h2>Questions, answered.</h2>
+      <p>Quick answers before you apply.</p>
+    </div>
+    <div class="faq-list reveal">
+      <details><summary>What documents do I usually need?</summary><p>Typically a photo ID, address proof, recent income proof or bank statements and, for a loan against car, the vehicle's registration certificate and insurance. Exact requirements depend on the lender and your profile, and our team confirms the list when they call you back.</p></details>
+      <details><summary>What is the starting interest rate?</summary><p>Rates start from 7.5% p.a. The rate you receive depends on your profile, the vehicle and the lender. Use the EMI calculator above to see how different rates change your monthly payment.</p></details>
+      <details><summary>What is a loan against car?</summary><p>It lets you raise funds against a car you already own while you continue to use it. The amount depends on the vehicle's value and condition and on your repayment capacity.</p></details>
+      <details><summary>How long does approval take?</summary><p>Timelines depend on the lender and how quickly your documents are verified. Our team will give you a realistic estimate when they call you back.</p></details>
+      <details><summary>Does the eligibility check affect my credit score?</summary><p>No. The eligibility check on this page is only an indicative estimate calculated in your browser. It does not involve a credit bureau check.</p></details>
+      <details><summary>Are there processing fees or other charges?</summary><p>Processing and other charges vary by lender and loan type. Our team explains the applicable charges before you proceed, so you can compare with confidence.</p></details>
+      <details><summary>Can I repay the loan early?</summary><p>Many lenders allow part-payment or foreclosure, sometimes with charges. The terms depend on the lender, and we will share them before you decide.</p></details>
+      <details><summary>How do I get started?</summary><p>Use the calculator, run the eligibility check, then request a callback. You can also message us on WhatsApp or call +91 97785 16374.</p></details>
+    </div>
+  </div>
+</section>
+
 <section id="contact">
   <div class="wrap">
     <div class="section-head reveal">
@@ -1172,6 +1266,15 @@
       <div class="lead-form-box">
         <form id="leadForm" name="lead-form">
           <p class="hp-field" aria-hidden="true"><label>Don't fill this out: <input name="company" tabindex="-1" autocomplete="off"></label></p>
+
+          <div class="est-chip" id="estChip">
+            <div>
+              <span class="est-sub" style="margin:0 0 4px;">Your loan estimate</span>
+              <b id="estMain">₹5,00,000 · 60 months · 7.5% p.a.</b>
+              <span class="est-sub" id="estSub">Estimated EMI ₹10,019/mo</span>
+            </div>
+            <a href="#calculator">Change</a>
+          </div>
           
           <div class="form-group">
             <label for="name">Full name</label>
@@ -1209,14 +1312,16 @@
             </div>
           </div>
 
+          <label class="consent-row">
+            <input type="checkbox" id="consent" name="consent" required>
+            <span>I agree to be contacted about my enquiry and accept the <a href="privacy.html" target="_blank" rel="noopener">Privacy Policy</a>.</span>
+          </label>
+
           <button class="btn-submit-glow" type="submit">
             <span>Request a callback</span>
             <i class="fa-solid fa-arrow-right"></i>
           </button>
           <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
-          <p style="font-size:12px; color:var(--text-muted); text-align:center; margin-top:16px;">
-            By submitting, you agree to be contacted about your enquiry.
-          </p>
         </form>
       </div>
     </div>
@@ -1231,13 +1336,25 @@
     <div class="footer-links">
       <a href="tel:+919778516374">+91 97785 16374</a>
       <a href="#services">Services</a>
+      <a href="#faq">FAQ</a>
+      <a href="privacy.html">Privacy</a>
       <a href="#contact">Contact</a>
     </div>
   </div>
 </footer>
 
+<!-- Floating contact buttons -->
+<div class="fab-stack">
+  <a class="fab fab-call" href="tel:+919778516374" aria-label="Call Privil Edge Solutions"><i class="fa-solid fa-phone"></i></a>
+  <a class="fab fab-wa" id="waBtn" href="https://wa.me/919778516374" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+</div>
+
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Shared state linking the calculator, eligibility check and lead form
+  const leadCtx = { emi: null, touched: false };
+  const ELIG = { loan: null, income: null, job: null, result: null, ratio: null };
 
   // 1. Interactive 3D Parallax Tilt for Hero Card
   const tiltCard = document.getElementById('heroTiltCard');
@@ -1359,12 +1476,118 @@
     const principalPct = Math.max(5, Math.min(95, (P / total) * 100));
     barP.style.width = principalPct + '%';
     barI.style.width = (100 - principalPct) + '%';
+
+    leadCtx.emi = emi;
+    syncLead();
   }
 
   [amountEl, tenureEl, rateEl].forEach(el => el.addEventListener('input', calc));
   calc();
 
-  // 4. Lead form submission (GitHub Pages compatible)
+  // 4. Connect calculator, eligibility check and lead form
+  const INCOME = [
+    { label: 'Below ₹25,000', mid: 20000 },
+    { label: '₹25,000 – ₹50,000', mid: 37500 },
+    { label: '₹50,000 – ₹1,00,000', mid: 75000 },
+    { label: 'Above ₹1,00,000', mid: 125000 }
+  ];
+  const STEPS = [
+    { q: 'What do you need?', key: 'loan', opts: ['Loan Against Car', 'New Car Loan', 'Used Car Loan'] },
+    { q: 'What is your monthly income?', key: 'income', opts: INCOME.map(i => i.label) },
+    { q: 'How do you earn?', key: 'job', opts: ['Salaried', 'Self-employed', 'Business owner'] }
+  ];
+  const eligCard = document.getElementById('eligCard');
+  const productSel = document.getElementById('product');
+  const finePointer = window.matchMedia('(pointer: fine)').matches;
+
+  function setProduct(name) {
+    const norm = x => x.trim().toLowerCase().replace(/s$/, '');
+    for (const o of productSel.options) {
+      if (norm(o.textContent) === norm(name)) { productSel.value = o.value || o.textContent.trim(); break; }
+    }
+  }
+
+  // Keeps the form estimate, WhatsApp message and eligibility summary in step with the calculator
+  function syncLead() {
+    if (leadCtx.emi == null) return;
+    const P = parseFloat(amountEl.value), m = parseInt(tenureEl.value, 10), r = parseFloat(rateEl.value);
+    document.getElementById('estMain').textContent = formatINR(P) + ' · ' + m + ' months · ' + r.toFixed(1) + '% p.a.';
+    document.getElementById('estSub').textContent = 'Estimated EMI ' + formatINR(leadCtx.emi) + '/mo' + (ELIG.result ? ' · Eligibility: ' + ELIG.result : '');
+    let msg = "Hi Privil Edge, I'd like a callback about a car loan.";
+    if (leadCtx.touched) msg += ' My estimate: ' + formatINR(P) + ' for ' + m + ' months, EMI about ' + formatINR(leadCtx.emi) + '/mo.';
+    if (ELIG.result) msg += ' Eligibility check: ' + ELIG.result + '.';
+    document.getElementById('waBtn').href = 'https://wa.me/919778516374?text=' + encodeURIComponent(msg);
+  }
+
+  function highlightForm(focusName) {
+    setTimeout(() => {
+      const chip = document.getElementById('estChip');
+      chip.classList.remove('flash'); void chip.offsetWidth; chip.classList.add('flash');
+      if (focusName && finePointer) document.getElementById('name').focus({ preventScroll: true });
+    }, 600);
+  }
+
+  [amountEl, tenureEl, rateEl].forEach(el => el.addEventListener('input', () => {
+    leadCtx.touched = true;
+    syncLead();
+    if (ELIG.job) eligResult(); // keep a shown result in step with the sliders
+  }));
+
+  document.getElementById('applyCalcBtn').addEventListener('click', () => highlightForm(true));
+  document.querySelectorAll('.service-cta-link').forEach(a => a.addEventListener('click', () => {
+    const card = a.closest('.service-card');
+    const h = card && card.querySelector('h3');
+    if (h) setProduct(h.textContent.trim());
+  }));
+
+  // Eligibility check (indicative, calculated in the browser)
+  function eligStep(n) {
+    const s = STEPS[n];
+    eligCard.innerHTML =
+      '<div class="elig-progress">' + STEPS.map((_, i) => '<span class="' + (i <= n ? 'on' : '') + '"></span>').join('') + '</div>' +
+      '<div class="elig-q">' + s.q + '</div>' +
+      '<div class="chip-grid">' + s.opts.map(o => '<button type="button" class="chip" data-v="' + o + '">' + o + '</button>').join('') + '</div>' +
+      (n > 0 ? '<button type="button" class="elig-back" id="eligBack">← Back</button>' : '');
+    eligCard.querySelectorAll('.chip').forEach(b => b.addEventListener('click', () => {
+      ELIG[s.key] = b.dataset.v;
+      if (s.key === 'loan') setProduct(ELIG.loan);
+      if (n < STEPS.length - 1) eligStep(n + 1); else eligResult();
+    }));
+    const back = document.getElementById('eligBack');
+    if (back) back.addEventListener('click', () => eligStep(n - 1));
+  }
+
+  function eligResult() {
+    const inc = INCOME.find(i => i.label === ELIG.income).mid;
+    const ratio = leadCtx.emi / inc;
+    let cls, tag, msg;
+    if (ratio <= 0.40) { cls = 'good'; tag = 'Strong fit'; msg = 'Your estimated EMI sits comfortably within your income, so this looks like a healthy loan size.'; }
+    else if (ratio <= 0.55) { cls = 'mid'; tag = 'Possible fit'; msg = 'Your estimated EMI is on the higher side for your income. A smaller amount or a longer tenure could improve your chances.'; }
+    else { cls = 'low'; tag = 'Needs adjusting'; msg = 'Your estimated EMI is high compared with your income. Try a lower amount or a longer tenure in the calculator, then check again.'; }
+    ELIG.result = tag;
+    ELIG.ratio = Math.round(ratio * 100);
+    syncLead();
+    eligCard.innerHTML =
+      '<div class="elig-result"><span class="elig-tag ' + cls + '">' + tag + '</span>' +
+      '<h3>' + ELIG.loan + ': ' + formatINR(amountEl.value) + ' over ' + tenureEl.value + ' months</h3>' +
+      '<p>Estimated EMI ' + formatINR(leadCtx.emi) + '/mo is about ' + ELIG.ratio + '% of your monthly income (' + ELIG.income + ').</p>' +
+      '<p>' + msg + '</p>' +
+      '<div class="elig-actions">' +
+        '<a class="elig-btn primary" href="#contact" id="eligApply">Request a callback <i class="fa-solid fa-arrow-right"></i></a>' +
+        '<a class="elig-btn" href="#calculator">Adjust calculator</a>' +
+        '<button type="button" class="elig-btn" id="eligRestart">Start over</button>' +
+      '</div>' +
+      '<p class="elig-note">Indicative estimate only, based on the figures you entered. It is not a loan offer or approval. Final eligibility is decided by the lender after verification.</p></div>';
+    document.getElementById('eligApply').addEventListener('click', () => highlightForm(true));
+    document.getElementById('eligRestart').addEventListener('click', () => {
+      ELIG.loan = ELIG.income = ELIG.job = ELIG.result = ELIG.ratio = null;
+      syncLead();
+      eligStep(0);
+    });
+  }
+  eligStep(0);
+
+  // Lead form submission (GitHub Pages compatible)
   // Web3Forms access key (public by design). If it is ever blanked, the form falls back to the visitor's email app.
   const WEB3FORMS_KEY = 'd25bd9a2-ec8c-4dfa-bffc-4844fd0912db';
   const LEAD_EMAIL = 'pninangeorge@yahoo.com';
@@ -1376,6 +1599,22 @@
     formStatus.className = 'form-status show ' + (ok ? 'ok' : 'err');
   }
 
+  function leadExtras() {
+    const o = {
+      loan_amount: formatINR(amountEl.value),
+      tenure: tenureEl.value + ' months',
+      interest_rate: parseFloat(rateEl.value).toFixed(1) + '% p.a.',
+      estimated_emi: formatINR(leadCtx.emi) + '/mo'
+    };
+    if (ELIG.result) {
+      o.eligibility_result = ELIG.result;
+      o.monthly_income = ELIG.income;
+      o.employment = ELIG.job;
+      o.emi_to_income = ELIG.ratio + '%';
+    }
+    return o;
+  }
+
   leadForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     const data = Object.fromEntries(new FormData(leadForm));
@@ -1384,13 +1623,15 @@
     // Honeypot: bots fill this hidden field; pretend success and drop it
     if (data.company) { setStatus(okMsg, true); leadForm.reset(); return; }
 
+    const extras = leadExtras();
     const btn = leadForm.querySelector('button[type="submit"]');
     const label = btn.querySelector('span');
     const original = label.textContent;
 
-    // Fallback until an access key is configured
+    // Fallback if no access key is configured
     if (WEB3FORMS_KEY.startsWith('YOUR_')) {
-      const body = 'Name: ' + data.name + '\nMobile: ' + data.mobile + '\nLoan type: ' + data.product + '\nCity: ' + (data.city || '-');
+      let body = 'Name: ' + data.name + '\nMobile: ' + data.mobile + '\nLoan type: ' + data.product + '\nCity: ' + (data.city || '-');
+      Object.keys(extras).forEach(k => { body += '\n' + k.replace(/_/g, ' ') + ': ' + extras[k]; });
       window.location.href = 'mailto:' + LEAD_EMAIL + '?subject=' + encodeURIComponent('Callback request - Privil Edge Solutions') + '&body=' + encodeURIComponent(body);
       setStatus('Opening your email app to send the request…', true);
       return;
@@ -1402,15 +1643,16 @@
       const res = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-        body: JSON.stringify({
+        body: JSON.stringify(Object.assign({
           access_key: WEB3FORMS_KEY,
           subject: 'New callback request - Privil Edge Solutions',
           from_name: 'Privil Edge Website',
           name: data.name,
           mobile: data.mobile,
           loan_type: data.product,
-          city: data.city || '-'
-        })
+          city: data.city || '-',
+          consent: 'Agreed to be contacted and accepted the Privacy Policy'
+        }, extras))
       });
       const json = await res.json();
       if (!json.success) throw new Error(json.message || 'Submission failed');
