@@ -12,7 +12,7 @@
 <meta property="og:description" content="Privil Edge Solutions in Kochi offers loan against car, new car loans and used car loans. Check your EMI, see your eligibility and request a callback.">
 <meta property="og:url" content="https://priviledge.in/">
 <meta name="twitter:card" content="summary">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FinancialService", "name": "Privil Edge Solutions", "url": "https://priviledge.in/", "telephone": "+91-97785-16374", "email": "pninangeorge@yahoo.com", "description": "Vehicle financing: loan against car, new car loans and used car loans.", "address": {"@type": "PostalAddress", "streetAddress": "4th Floor, Pukalakkattu City Centre, Palarivattom", "addressLocality": "Kochi", "addressRegion": "Kerala", "postalCode": "682025", "addressCountry": "IN"}, "areaServed": "IN"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FinancialService", "name": "Privil Edge Solutions", "url": "https://priviledge.in/", "telephone": "+91-97785-16374", "email": "priviledgesolution@gmail.com", "description": "Vehicle financing: loan against car, new car loans and used car loans.", "address": {"@type": "PostalAddress", "streetAddress": "4th Floor, Pukalakkattu City Centre, Palarivattom", "addressLocality": "Kochi", "addressRegion": "Kerala", "postalCode": "682025", "addressCountry": "IN"}, "areaServed": "IN"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What documents do I usually need?", "acceptedAnswer": {"@type": "Answer", "text": "Typically a photo ID, address proof, recent income proof or bank statements and, for a loan against car, the vehicle's registration certificate and insurance. Exact requirements depend on the lender and your profile, and our team confirms the list when they call you back."}}, {"@type": "Question", "name": "What is the starting interest rate?", "acceptedAnswer": {"@type": "Answer", "text": "Rates start from 7.5% p.a. The rate you receive depends on your profile, the vehicle and the lender. Use the EMI calculator above to see how different rates change your monthly payment."}}, {"@type": "Question", "name": "What is a loan against car?", "acceptedAnswer": {"@type": "Answer", "text": "It lets you raise funds against a car you already own while you continue to use it. The amount depends on the vehicle's value and condition and on your repayment capacity."}}, {"@type": "Question", "name": "How long does approval take?", "acceptedAnswer": {"@type": "Answer", "text": "Timelines depend on the lender and how quickly your documents are verified. Our team will give you a realistic estimate when they call you back."}}, {"@type": "Question", "name": "Does the eligibility check affect my credit score?", "acceptedAnswer": {"@type": "Answer", "text": "No. The eligibility check on this page is only an indicative estimate calculated in your browser. It does not involve a credit bureau check."}}, {"@type": "Question", "name": "Are there processing fees or other charges?", "acceptedAnswer": {"@type": "Answer", "text": "Processing and other charges vary by lender and loan type. Our team explains the applicable charges before you proceed, so you can compare with confidence."}}, {"@type": "Question", "name": "Can I repay the loan early?", "acceptedAnswer": {"@type": "Answer", "text": "Many lenders allow part-payment or foreclosure, sometimes with charges. The terms depend on the lender, and we will share them before you decide."}}, {"@type": "Question", "name": "How do I get started?", "acceptedAnswer": {"@type": "Answer", "text": "Use the calculator, run the eligibility check, then request a callback. You can also message us on WhatsApp or call +91 97785 16374."}}]}</script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%278%27 fill=%27%23F5C042%27/%3E%3Ctext x=%2716%27 y=%2723%27 font-size=%2720%27 font-weight=%27800%27 text-anchor=%27middle%27 fill=%27%2305070B%27 font-family=%27sans-serif%27%3EP%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1249,7 +1249,7 @@
           <div class="office-icon"><i class="fa-solid fa-envelope"></i></div>
           <div class="office-info">
             <h4>Email</h4>
-            <p><a href="mailto:pninangeorge@yahoo.com">pninangeorge@yahoo.com</a></p>
+            <p><a href="mailto:priviledgesolution@gmail.com">priviledgesolution@gmail.com</a></p>
           </div>
         </div>
 
@@ -1265,7 +1265,7 @@
       <!-- Lead Form (works on GitHub Pages via Web3Forms; see script) -->
       <div class="lead-form-box">
         <form id="leadForm" name="lead-form">
-          <p class="hp-field" aria-hidden="true"><label>Don't fill this out: <input name="company" tabindex="-1" autocomplete="off"></label></p>
+          <p class="hp-field" aria-hidden="true"><label>Don't fill this out: <input name="hp_trap" tabindex="-1" autocomplete="off" data-lpignore="true" data-1p-ignore></label></p>
 
           <div class="est-chip" id="estChip">
             <div>
@@ -1589,8 +1589,8 @@
 
   // Lead form submission (GitHub Pages compatible)
   // Web3Forms access key (public by design). If it is ever blanked, the form falls back to the visitor's email app.
-  const WEB3FORMS_KEY = 'd25bd9a2-ec8c-4dfa-bffc-4844fd0912db';
-  const LEAD_EMAIL = 'pninangeorge@yahoo.com';
+  const WEB3FORMS_KEY = '40b5b9ef-6d6c-4330-9b7e-d6ee52937dbb';
+  const LEAD_EMAIL = 'priviledgesolution@gmail.com';
   const leadForm = document.getElementById('leadForm');
   const formStatus = document.getElementById('formStatus');
 
@@ -1621,7 +1621,7 @@
     const okMsg = 'Thank you! Our team will call you back shortly.';
 
     // Honeypot: bots fill this hidden field; pretend success and drop it
-    if (data.company) { setStatus(okMsg, true); leadForm.reset(); return; }
+    if (data.hp_trap) { setStatus(okMsg, true); leadForm.reset(); return; }
 
     const extras = leadExtras();
     const btn = leadForm.querySelector('button[type="submit"]');
@@ -1659,6 +1659,7 @@
       setStatus(okMsg, true);
       leadForm.reset();
     } catch (err) {
+      console.error('Form submission failed:', err);
       setStatus('Sorry, something went wrong. Please call us on +91 97785 16374.', false);
     } finally {
       btn.disabled = false;
